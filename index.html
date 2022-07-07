@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus</title>
     <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <script defer src="./javascript.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      }
+    </script>
   </head>
-  <body>
-    <div class="items">
-      <div class="item"><i>1</i></div>
-      <div class="item"><i>1</i></div>
-      <div class="item"><i>1</i></div>
-    </div>
+  <body class="bg-neutral-200 text-neutral-800 p-20">
+    <p>Pulsa `n` para empezar a crear tareas</p>
+    <div class="js-tasks"></div>
   </body>
 </html>
