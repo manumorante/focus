@@ -4,23 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus</title>
-    <link href="./styles.css" rel="stylesheet" type="text/css" />
-    <script defer src="./javascript.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            },
-          },
-        },
-      }
-    </script>
+    <link href="./dist/styles.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="./src/javascript/index.js"></script>
   </head>
-  <body class="bg-neutral-200 text-neutral-800 p-20">
-    <p>Pulsa `n` para empezar a crear tareas</p>
-    <div class="js-tasks"></div>
+  <body class="flex justify-center items-center bg-white">
+    <div class="w-iphone h-iphone">
+      <div id="tasks" class="tasks"></div>
+    </div>
   </body>
 </html>
